@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Localization;
 using AspNetCoreMvcSharedLocalization.Resources;
 using System.Reflection;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreMvcSharedLocalization
 {
@@ -77,7 +78,7 @@ namespace AspNetCoreMvcSharedLocalization
                     options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
                 });
 
-            services.AddMvc();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -86,7 +87,6 @@ namespace AspNetCoreMvcSharedLocalization
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
                 app.UseDatabaseErrorPage();
             }
             else
