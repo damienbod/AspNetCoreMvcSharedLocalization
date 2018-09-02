@@ -14,4 +14,4 @@ https://localhost:44371/Account/Register?culure=en-US&ui-culture=en-US
 
 ### History
 
-2018-09-02 Udated to .NET Core 2.1, Bootstrap 4
+2018-09-02 Updated to .NET Core 2.1, Bootstrap 4
