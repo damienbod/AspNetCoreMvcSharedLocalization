@@ -46,7 +46,11 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - AspNetCoreMvcSharedLocalization</p>
+       
+            <p>&copy; 2018 - AspNetCoreMvcSharedLocalization</p>
+
+            @await Html.PartialAsync("_SelectLanguagePartial")
+ 
         </footer>
     </div>
 
