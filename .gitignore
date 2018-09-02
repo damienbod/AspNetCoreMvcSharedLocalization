@@ -2,3 +2,4 @@
 /AspNetCoreMvcSharedLocalization/obj
 /.vs/AspNetCoreMvcSharedLocalization/v15
 /.vs
+/AspNetCoreMvcSharedLocalization/node_modules/
