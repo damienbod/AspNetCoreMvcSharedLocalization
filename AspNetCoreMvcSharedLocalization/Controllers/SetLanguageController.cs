@@ -7,11 +7,6 @@ namespace AspNetCoreMvcSharedLocalization.Controllers
 {
     public class SetLanguageController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [HttpPost]
         public IActionResult SetLanguage(string culture, string returnUrl)
         {
