@@ -42,17 +42,6 @@ namespace AspNetCoreMvcSharedLocalization
             services.AddSingleton<LocService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
-            services.AddMvc()
-                .AddViewLocalization()
-                .AddDataAnnotationsLocalization(options =>
-                {
-                    options.DataAnnotationLocalizerProvider = (type, factory) =>
-                    {
-                        var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
-                        return factory.Create("SharedResource", assemblyName.Name);
-                    };
-                });
-
             services.Configure<RequestLocalizationOptions>(
                 options =>
                 {
@@ -78,7 +67,16 @@ namespace AspNetCoreMvcSharedLocalization
                     options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
                 });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc()
+                .AddViewLocalization()
+                .AddDataAnnotationsLocalization(options =>
+                {
+                    options.DataAnnotationLocalizerProvider = (type, factory) =>
+                    {
+                        var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
+                        return factory.Create("SharedResource", assemblyName.Name);
+                    };
+                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
