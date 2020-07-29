@@ -14,6 +14,8 @@ https://localhost:44371/Account/Register?culure=en-US&ui-culture=en-US
 
 ### History
 
+2020-07-28 Updated to .NET Core 3.1.6
+
 2018-12-04 Updated to .NET Core 2.2
 
 2018-11-27 Updated to .NET Core 2.2, updated npm packages
