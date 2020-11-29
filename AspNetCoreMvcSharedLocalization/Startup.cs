@@ -1,23 +1,25 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using AspNetCoreMvcSharedLocalization.Data;
-using AspNetCoreMvcSharedLocalization.Models;
-using AspNetCoreMvcSharedLocalization.Services;
-using System.Globalization;
-using Microsoft.AspNetCore.Localization;
-using AspNetCoreMvcSharedLocalization.Resources;
-using System.Reflection;
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
-
+﻿
 namespace AspNetCoreMvcSharedLocalization
 {
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Reflection;
+
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.AspNetCore.Localization;
+    using AspNetCoreMvcSharedLocalization.Resources;
+    using Microsoft.Extensions.Options;
+    using Microsoft.Extensions.Hosting;
+
+    using AspNetCoreMvcSharedLocalization.Data;
+    using AspNetCoreMvcSharedLocalization.Models;
+    using AspNetCoreMvcSharedLocalization.Services;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -94,7 +96,7 @@ namespace AspNetCoreMvcSharedLocalization
                 app.UseHsts();
             }
 
-          
+
 
 
             var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();

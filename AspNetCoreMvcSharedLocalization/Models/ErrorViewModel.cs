@@ -1,5 +1,3 @@
-using System;
-
 namespace AspNetCoreMvcSharedLocalization.Models
 {
     public class ErrorViewModel

@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.Localization;
-using System.Reflection;
-
-namespace AspNetCoreMvcSharedLocalization.Resources
+﻿namespace AspNetCoreMvcSharedLocalization.Resources
 {
+    using System.Reflection;
+
+    using Microsoft.Extensions.Localization;
+
     public class LocService
     {
         private readonly IStringLocalizer _localizer;

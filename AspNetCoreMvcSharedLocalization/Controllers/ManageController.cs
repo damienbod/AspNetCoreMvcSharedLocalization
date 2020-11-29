@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using AspNetCoreMvcSharedLocalization.Models;
-using AspNetCoreMvcSharedLocalization.Models.ManageViewModels;
-using AspNetCoreMvcSharedLocalization.Services;
-
-namespace AspNetCoreMvcSharedLocalization.Controllers
+﻿namespace AspNetCoreMvcSharedLocalization.Controllers
 {
+    using System;
+    using System.Linq;
+    using System.Text;
+    using System.Text.Encodings.Web;
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authentication;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+
+    using AspNetCoreMvcSharedLocalization.Models;
+    using AspNetCoreMvcSharedLocalization.Models.ManageViewModels;
+    using AspNetCoreMvcSharedLocalization.Services;
+
     [Authorize]
     [Route("[controller]/[action]")]
     public class ManageController : Controller

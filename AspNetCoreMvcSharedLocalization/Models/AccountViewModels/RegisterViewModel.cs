@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace AspNetCoreMvcSharedLocalization.Models.AccountViewModels
+﻿namespace AspNetCoreMvcSharedLocalization.Models.AccountViewModels
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class RegisterViewModel
     {
         [Required(ErrorMessage = "emailRequired")]

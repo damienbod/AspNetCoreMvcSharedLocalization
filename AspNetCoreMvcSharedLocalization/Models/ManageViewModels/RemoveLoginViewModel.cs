@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AspNetCoreMvcSharedLocalization.Models.ManageViewModels
+﻿namespace AspNetCoreMvcSharedLocalization.Models.ManageViewModels
 {
     public class RemoveLoginViewModel
     {
