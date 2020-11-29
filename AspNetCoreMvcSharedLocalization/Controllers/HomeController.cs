@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using AspNetCoreMvcSharedLocalization.Models;
-
-namespace AspNetCoreMvcSharedLocalization.Controllers
+﻿namespace AspNetCoreMvcSharedLocalization.Controllers
 {
+    using System.Diagnostics;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using AspNetCoreMvcSharedLocalization.Models;
+
     public class HomeController : Controller
     {
         public IActionResult Index()

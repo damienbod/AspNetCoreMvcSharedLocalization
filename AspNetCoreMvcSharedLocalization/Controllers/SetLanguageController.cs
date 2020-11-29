@@ -1,10 +1,11 @@
-﻿using System;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-
-namespace AspNetCoreMvcSharedLocalization.Controllers
+﻿namespace AspNetCoreMvcSharedLocalization.Controllers
 {
+    using System;
+
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Localization;
+    using Microsoft.AspNetCore.Mvc;
+
     public class SetLanguageController : Controller
     {
         [HttpPost]
