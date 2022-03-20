@@ -14,7 +14,9 @@ https://localhost:44371/Account/Register?culture=en-US&ui-culture=en-US
 
 ### History
 
-2020-11-29 Updated to .NET 5.0.0
+2022-03-20 Updated to .NET 6.0
+
+2020-11-29 Updated to .NET 5.0
 
 2020-11-08 Updated to .NET Core 3.1.9, updated npm packages
 

@@ -120,11 +120,11 @@
   <data name="password" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="String" xml:space="preserve">
+  <data name="register" xml:space="preserve">
     <value>Register</value>
   </data>
   <data name="confirmPassword" xml:space="preserve">
-    <value>confirm Password</value>
+    <value>Confirm Password</value>
   </data>
   <data name="confirmPasswordNotMatching" xml:space="preserve">
     <value>The password and confirmation password do not match.</value>
@@ -136,7 +136,7 @@
     <value>E-Mail</value>
   </data>
   <data name="emailInvalid" xml:space="preserve">
-    <value>invalid Email</value>
+    <value>Invalid Email</value>
   </data>
   <data name="emailRequired" xml:space="preserve">
     <value>Email required</value>
@@ -160,6 +160,6 @@
     <value>Overview</value>
   </data>
   <data name="passwordRequired" xml:space="preserve">
-    <value>Passwort required</value>
+    <value>Password required</value>
   </data>
 </root>
